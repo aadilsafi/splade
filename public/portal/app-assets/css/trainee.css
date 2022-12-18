@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Nunito:wght@300;400;500;600;700&family=Varela+Round&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #555555;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+span,
+p {
+    font-weight: normal;
+}
+
+ :root {
+    --primary-blue: 44, 47, 137;
+    --blue: 33, 132, 197;
+    --red: 215, 44, 39;
+    --yellow: 204, 219, 42;
+    --orange: 234, 138, 34;
+    --green: 107, 163, 66;
+    --seagreen: 61, 181, 140;
+    --pink: 206, 24, 111;
+    --purple: 136, 31, 96;
+}
+
+.nav-link {
+    color: inherit!important;
+    font-weight: bold;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: rgb(var(--primary-blue))!important;
+}
+
+.square {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.square img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sidebar-header {
+    background: rgb(var(--primary-blue));
+    color: white;
+    padding: 0.5rem;
+}
+
+.sidebar-header .row {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.sidebar-header .row div {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.progress {
+    height: 10px;
+}
+
+.rounded {
+    border-radius: 20px!important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+}
+
+.h-full {
+    min-height: 100vh;
+}
+
+.leader-circle {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    /* border-radius: 50%; */
+}
+
+.leader-holder {
+    width: 100px;
+    text-align: center;
+    margin: 50px;
+}
+
+.leader-bottom {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(var(--primary-blue));
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#leaderboardThird {
+    background-color: rgb(var(--blue));
+}
+
+#leaderboardFirst {
+    background-color: rgb(var(--red));
+}
+
+#leaderboardSecond {
+    background-color: rgb(var(--green));
+}
+
+.leader-cirle img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.leader-left {
+    position: absolute;
+    top: 55%;
+    left: 0;
+}
+
+.leader-list {
+    padding: 0.5rem;
+    background: white;
+    height: 300px;
+}
+
+.leaders {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    position: relative;
+}
+
+.leader {
+    width: 30%;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    /* margin-right: 20px; */
+}
+
+.leader-content {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: small;
+}
+
+.leader-img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leader-img img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.crown {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    top: 0;
+    left: calc(50% - 15px);
+}
+
+.leader-middle {
+    position: absolute;
+    top: 30%;
+    left: calc(50% - 40px);
+}
+
+.leader-right {
+    position: absolute;
+    top: 55%;
+    right: 0;
+}
+
+.table td,
+.table th {
+    vertical-align: middle!important;
+}
+
+.bg {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23C4BEFF'/%3E%3Cstop offset='1' stop-color='%23A2D9FF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='12' cy='12' r='12'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.15'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+}
+
+.bg-2 {
+    background-color: #BABFFF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23BABFFF' stroke-width='.5' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cuse fill='%23b8bdfc' href='%23s' y='2'/%3E%3Cuse fill='%23b8bdfc' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23b6bbfa' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23b6bbfa' href='%23s'/%3E%3Cuse fill='%23b4b9f7' href='%23s' x='2'/%3E%3Cuse fill='%23b4b9f7' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23b2b7f5'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23b2b7f5'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23b0b5f2'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23BABFFF'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23aeb3ef'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../../../lms/app-assets/images/pages/blob-bg.svg")
+}
+
+.greyscale {
+    filter: grayscale(100%);
+}
+
+.answers form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.answers label {
+    display: flex;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.375em;
+    /* Accessible outline */
+    /* Remove comment to use */
+    /*
+  	&:focus-within {
+  			outline: .125em solid $primary-color;
+  	}
+  */
+}
+
+.answers label input {
+    position: absolute;
+    left: -9999px;
+}
+
+.answers label input:checked+span {
+    background-color: #d6d6e5;
+}
+
+.answers label input:checked+span:before {
+    box-shadow: inset 0 0 0 0.4375em rgb(var(--primary-blue));
+}
+
+.answers label span {
+    display: flex;
+    align-items: center;
+    padding: 0.375em 0.75em 0.375em 0.375em;
+    border-radius: 99em;
+    transition: 0.25s ease;
+}
+
+.answers label span:hover {
+    background-color: #d6d6e5;
+}
+
+.answers label span:before {
+    display: flex;
+    flex-shrink: 0;
+    content: "";
+    background-color: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.375em;
+    transition: 0.25s ease;
+    box-shadow: inset 0 0 0 0.125em rgb(var(--primary-blue));
+}
+
+#questions {
+    width: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.question {
+    /* width: 95%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons {
+    width: 95%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: end;
+}
+
+.card-image {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='300' height='200' preserveAspectRatio='none' viewBox='0 0 300 200'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1265%26quot%3b)' fill='none'%3e%3crect width='300' height='200' x='0' y='0' fill='rgba(206%2c 24%2c 111%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c105.407C21.337%2c105.933%2c46.612%2c111.323%2c62.118%2c96.657C77.859%2c81.768%2c68.267%2c54.865%2c75.155%2c34.322C81.025%2c16.815%2c101.816%2c4.015%2c99.312%2c-14.279C96.808%2c-32.567%2c76.142%2c-41.629%2c62.985%2c-54.577C50.985%2c-66.386%2c40.859%2c-79.969%2c25.517%2c-86.902C8.666%2c-94.517%2c-9.93%2c-99.109%2c-28.113%2c-95.744C-47.3%2c-92.194%2c-63.952%2c-81.102%2c-78.152%2c-67.719C-93.492%2c-53.262%2c-113.186%2c-37.249%2c-112.535%2c-16.18C-111.875%2c5.198%2c-84.207%2c14.947%2c-75.003%2c34.253C-66.041%2c53.051%2c-75.288%2c79.309%2c-60.18%2c93.642C-45.045%2c108%2c-20.856%2c104.893%2c0%2c105.407' fill='%23bc1665'%3e%3c/path%3e%3cpath d='M300 315.665C321.182 311.841 341.084 303.497 357.795 289.931 373.302 277.342 380.359 258.429 391.185 241.643 404.129 221.573 425.91200000000003 205.47 427.628 181.65 429.43399999999997 156.58100000000002 415.887 132.79399999999998 400.457 112.954 384.479 92.41 364.179 73.704 338.89 67.553 314.04 61.508999999999986 288.544 70.57499999999999 264.749 79.947 242.614 88.665 223.155 101.948 207.066 119.472 190.608 137.398 172.721 157.219 171.49 181.523 170.282 205.373 191.43099999999998 223.34 200.692 245.352 210.336 268.276 206.735 299.169 227.03199999999998 313.54 247.302 327.892 275.559 320.078 300 315.665' fill='%23e11a79'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1265'%3e%3crect width='300' height='200' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    color: white;
+}
+
+.card-blue {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='300' height='200' preserveAspectRatio='none' viewBox='0 0 300 200'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3crect width='300' height='200' x='0' y='0' fill='rgba(33%2c 132%2c 197%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c114.432C22.222%2c111.596%2c44.898%2c111.262%2c64.234%2c99.95C84.062%2c88.35%2c100.565%2c71.179%2c109.848%2c50.166C119.069%2c29.294%2c116.624%2c6.16%2c115.742%2c-16.641C114.76%2c-42.035%2c122.186%2c-72.311%2c104.411%2c-90.473C86.533%2c-108.74%2c55.163%2c-97.168%2c30.47%2c-103.77C6.63%2c-110.144%2c-13.372%2c-132.467%2c-37.724%2c-128.477C-62.494%2c-124.419%2c-78.339%2c-101.035%2c-95.869%2c-83.071C-114.475%2c-64.005%2c-137.025%2c-46.519%2c-143.031%2c-20.565C-149.216%2c6.159%2c-140.695%2c34.107%2c-128.695%2c58.773C-116.888%2c83.041%2c-100.482%2c107.096%2c-75.711%2c117.809C-52.045%2c128.044%2c-25.577%2c117.696%2c0%2c114.432' fill='%231e78b3'%3e%3c/path%3e%3cpath d='M300 329.257C325.024 333.332 352.955 329.052 372.781 313.249 392.144 297.815 396.648 270.99 403.095 247.082 408.648 226.489 407.134 205.872 407.488 184.546 407.916 158.728 423.15999999999997 127.414 405.39 108.679 387.4 89.712 354.188 108.19 328.874 101.663 304.853 95.47 287.06 69.53399999999999 262.35699999999997 71.80099999999999 236.988 74.129 217.69299999999998 95.006 200.14600000000002 113.476 181.939 132.64100000000002 162.971 153.597 159.725 179.832 156.5 205.904 167.387 232.255 182.821 253.514 196.743 272.68899999999996 221.10899999999998 278.926 241.01 291.79 260.978 304.697 276.533 325.435 300 329.257' fill='%232490d7'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='300' height='200' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.card-green {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='300' height='200' preserveAspectRatio='none' viewBox='0 0 300 200'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='300' height='200' x='0' y='0' fill='rgba(61%2c 181%2c 140%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c107.828C20.853%2c106.416%2c40.781%2c101.87%2c59.522%2c92.617C80.154%2c82.431%2c104.91%2c73.176%2c113.455%2c51.813C121.977%2c30.507%2c107.432%2c7.67%2c102.462%2c-14.732C97.913%2c-35.24%2c94.91%2c-55.313%2c85.523%2c-74.106C73.596%2c-97.986%2c65.328%2c-128.273%2c40.659%2c-138.47C15.984%2c-148.67%2c-12.238%2c-135.551%2c-36.579%2c-124.578C-58.639%2c-114.633%2c-79.019%2c-99.934%2c-91.2%2c-79.025C-102.373%2c-59.845%2c-94.575%2c-35.811%2c-100.718%2c-14.481C-108.289%2c11.809%2c-139.307%2c33.79%2c-131.214%2c59.923C-123.364%2c85.271%2c-89.866%2c91.948%2c-64.939%2c101.048C-44.072%2c108.666%2c-22.163%2c109.329%2c0%2c107.828' fill='%2338a57f'%3e%3c/path%3e%3cpath d='M300 338.844C325.611 335.642 339.033 307.349 357.217 289.032 371.409 274.736 383.599 260.028 394.837 243.31 408.319 223.255 429.964 205.529 429.59299999999996 181.367 429.217 156.895 408.747 138.153 392.93399999999997 119.472 376.952 100.592 361.464 78.379 337.437 72.501 313.655 66.68299999999999 290.286 80.227 267.332 88.743 245.928 96.684 224.753 104.734 208.19299999999998 120.449 190.442 137.29399999999998 171.746 156.886 169.815 181.282 167.906 205.403 187.212 224.934 198.216 246.483 208.678 266.969 215.75 289.131 232.785 304.589 251.793 321.837 274.531 342.028 300 338.844' fill='%2347c197'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='300' height='200' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.status {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgb(var(--green));
+    margin-right: 10px;
+}
+
+#results {
+    position: relative;
+}
+
+canvas {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.calendar-header {
+    background-color: rgb(var(--red));
+    padding: 1.5rem;
+    color: white;
+}
+
+
+.calendar-day:first-child{
+    margin-top: 1.5rem;
+}
+.bg-na {
+    background-color: #ececec;
+}
+
+.bg-pass {
+    background-color: rgba(var(--green), 0.1);
+}
+
+.bg-fail{
+    background-color: rgba(var(--red), 0.1);
+}
+
+.calendar-day {
+    /* border: 1px solid gray; */
+    /* padding: 1rem; */
+    text-align: center;
+    /* font-size: 25px; */
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.calendar-day .date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 0.75rem;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.date-number {
+    font-size: 1.5rem;
+}
+
+.date .status {
+    width: 5px;
+    height: 5px;
+    margin-right: 2px;
+}
+
+.status.fail {
+    background-color: rgb(var(--red));
+}
+
+.status.na {
+    background-color: gray;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.fw-bolder {
+    font-weight: 600!important;
+}
+
+.dropdown-toggle::after{
+    content: none;
+}

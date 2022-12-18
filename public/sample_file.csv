@@ -1,0 +1,11 @@
+﻿Name,Difficulty_level,Bank,Answer 1,Answer 2,Answer 3,Answer 4
+What is MVC?,Easy,general,Model View Controller,Model Vue Control,Mode Vue Control,Model Vue Contrast
+What is Model?,Easy,general,Like Table,Like Query,Like Storage,Like Management
+"The _______ directory contains your project’s cache, session and log data",Meduim,MS Excel,Storage,Public,Resources,Database
+Which one Laravel command line interface?,Difficult,MS Excel,php artisan,Composer,Git,Cli
+Which of following command is used to remove the compiled class file in Laravel?,Easy,MS Powerpoint,php artisan clear-compiled,php artisan down,php artisan clear-class,php artisan inspire
+How to define an mutator in Laravel?,Difficult,MS Powerpoint,setNameAttribute method inside model,setNameAttribute method inside controller,setMutator method inside controller,setMutator method outside controller
+Where do we need to set database connection in Laravel?,Difficult,Power BI,.ENV file,config.php,setting.php,In seed files
+Which command is used to start laravel server?,Easy,Power BI,php artisan serve,php artisan clear,php artisan dump,php artisan ok
+Composer is a tool for,Easy,Presentation Skills,dependency management,Interpolation,configuration,None of the above
+What is it Blade?,Difficult,Presentation Skills,Template Engine,package,view ,framework

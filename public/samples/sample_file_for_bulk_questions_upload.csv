@@ -1,0 +1,4 @@
+name,difficulty_level_id,answers
+Question Number One,1,answer_one_of_one|answer_two_of_one
+Question Number Two,2,answer_two_of_one|answer_two_two|answer_tow_of_three
+Question Number Three,3,answer_three_of_one|answer_three_two|answer_three_of_three

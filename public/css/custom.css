@@ -1,0 +1,67 @@
+
+:root {
+
+  --bs-border-radius: 14px;
+  --primary-blue: 44, 47, 137;
+}
+
+body{
+	overflow-x: hidden;
+}
+fieldset 
+{
+	margin: 0;
+	min-width: 0;
+	padding: 10px;       
+	position: relative;
+	border-radius:4px;
+	padding-left:10px!important;
+}	
+	
+legend {
+	transition: width .3s cubic-bezier(.25,.8,.5,1);
+	width: 100%;
+	padding: 0;
+	margin-bottom: 0.5rem;
+	font-size: calc(1.275rem + 0.3vw);
+	line-height: inherit;
+  }
+  .v-application--is-ltr .v-text-field--outlined legend{
+	  text-align: left;
+  }
+#deleteAnswers{
+	font-size:32pt;
+}
+a{
+	color: black;
+  }
+
+  .main-margin{
+	margin: 0.5rem;
+  }
+  .v-application--wrap{
+	  background-color: #BABFFF;
+	   background-attachment: fixed;
+	  background-size: cover;
+	  background-image: url(blob-bg.svg);
+	  background-image: url(../images/logo/blob-bg.svg);
+  }
+  .sidebar-header {
+	background: rgb(var(--primary-blue));
+	color: white;
+	padding: 0.5rem;  
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+  
+  }
+  
+.border-radius {
+	border-radius: 20px !important;
+  }
+
+
+.sidebar-css{
+    height: calc( 100% - 32px);
+	/* position: fixed;
+	width: 319px; */
+  }
